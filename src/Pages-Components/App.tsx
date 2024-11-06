@@ -1,20 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
 import '../Styles/App.css';
+import NavScrollExample from './Navbar'; 
 import Navbar from './Navbar';
+import About from './About';
 
 function App() {
   return (
-    <main>
-      <Router>
-        <Navbar/>
+    <div>
+      <NavScrollExample />
       <Routes>
-        
+        <Route path="/about" element={<About />} />
+        {/* Add other routes as needed */}
       </Routes>
-    </Router>
-    </main>
+    </div>
   );
 }
 

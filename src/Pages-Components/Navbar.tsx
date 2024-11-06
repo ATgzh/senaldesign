@@ -1,14 +1,11 @@
 // src/components/Navbar.tsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../Styles/Navbar.css';
 
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+
 
 function NavScrollExample() {
   return (
@@ -24,8 +21,9 @@ function NavScrollExample() {
           >
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
               </NavDropdown.Item>
@@ -49,6 +47,7 @@ function NavScrollExample() {
           </Form>
         </Navbar.Collapse>
       </Container>
+
     </Navbar>
   );
 }
