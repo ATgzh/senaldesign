@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Pages-Components/App';
 import reportWebVitals from './reportWebVitals';
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"></link>
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

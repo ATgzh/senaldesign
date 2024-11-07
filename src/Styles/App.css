@@ -9,8 +9,11 @@
   background: linear-gradient(to right, #426BBC, #74A9F5);  /* Blue background */
   width: 50%; /* Take up half of the screen width */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   align-items: center;  /* Centers the header text vertically */
+  padding: 50px;
+  padding-top: 100px;
 }
 
 /* Right white section */
@@ -20,6 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;  /* Centers the header-right text vertically */
+  padding: 50px;
+  padding-top: 100px;
 }
 
 /* Header text inside blue section */
