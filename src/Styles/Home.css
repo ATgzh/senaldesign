@@ -28,3 +28,42 @@
     font-weight: 900;
     text-align: center;
 }
+
+.borderline{
+    width: 100%; /* Ensure it spans the full width of the screen */
+    height: 1%;
+  padding: 0.5px 1px; /* Add padding on top and sides */
+  background-color: #000000; /* Light background color */
+  text-align: center; /* Center text in this section */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-top: 107px;
+}
+
+.borderline-2{
+    width: 100%; /* Ensure it spans the full width of the screen */
+    height: 1%;
+  padding: 0.5px 1px; /* Add padding on top and sides */
+  background-color: #000000; /* Light background color */
+  text-align: center; /* Center text in this section */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-top: 30px;
+}
+
+.explore-text{
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* Custom blue button */
+.btn-primary {
+    background-color: #6698de; /* Custom shade of blue */
+    border-color: #000000;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #000000;
+  }

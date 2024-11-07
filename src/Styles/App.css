@@ -1,7 +1,7 @@
 /* Main container for both left and right sections */
 .main-container {
   display: flex; /* Use flexbox to align the sections side by side */
-  height: 400px; /* Full height of the screen */
+  height: 300px; /* Full height of the screen */
 }
 
 /* Left blue section */
@@ -40,4 +40,66 @@
 
 .header-right a {
   margin-top: 10px; /* Space for the link */
+}
+
+/* Explore Models Section */
+.explore-section {
+  width: 100%; /* Ensure it spans the full width of the screen */
+  padding: 50px 20px; /* Add padding on top and sides */
+  background-color: #ffffff; /* Light background color */
+  text-align: center; /* Center text in this section */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-top: 20px; /* Optional: Adjust the space between this section and previous sections */
+}
+
+/* Grid for the model cards */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+  gap: 20px;
+  justify-content: center; /* Center the grid within the section */
+  max-width: 1200px; /* Optional: Limit the width of the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+  padding-top: 40px;
+}
+
+/* Styling for each model card */
+.model-card {
+  background-color: #ffffff; /* Background color for each card */
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(43, 120, 183);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the cards */
+  text-align: center;
+  max-height: 150px;
+  width: 100%;
+  height: 100%; /* Make cards responsive in height */
+}
+
+/* Card title */
+.model-card h5 {
+  color: #426BBC;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Card description text */
+.model-card p {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .model-grid {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .model-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
 }

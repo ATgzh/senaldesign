@@ -30,8 +30,8 @@ function NavScrollExample() {
           </Nav>
           <div className="d-flex">
             {/* Login and Sign Up buttons */}
-            <Button variant="outline-success" className="me-2">Login</Button>
-            <Button variant="outline-success">Sign Up</Button>
+            <Button variant="primary" className="me-2">Login</Button>
+            <Button variant="primary">Sign Up</Button>
           </div>
         </Navbar.Collapse>
       </Container>

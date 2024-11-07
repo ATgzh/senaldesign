@@ -1,0 +1,1 @@
+export const isLoggedIn = false; // Change this to false to test the non-logged-in state

@@ -5,15 +5,18 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-
 import '../Styles/App.css';
 import Navbar from './Navbar';
 import Home from './Home';
+import Footer from './Footer';
+import { isLoggedIn } from './Globals';
 
 function App() {
   return (
     <main>
       <Router>
-        <Navbar/>
+        {!isLoggedIn && <Navbar />}
       <Routes>
       <Route path="/" element={<Home/>}/>
       </Routes>
+      <Footer/>
     </Router>
     </main>
   );
