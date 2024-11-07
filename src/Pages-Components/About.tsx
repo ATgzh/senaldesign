@@ -19,16 +19,6 @@ const About: React.FC = () => {
       
       {/* Main Content */}
       <div className="main-content">
-        <header className="top-nav">
-          <Link to="/">Home</Link>
-          <Link to="/about" className="active">About</Link>
-          <Link to="/plans">Plans</Link>
-          <div className="auth-buttons">
-            <button className="login-button">Login</button>
-            <button className="signup-button">Sign Up</button>
-          </div>
-        </header>
-
         <section className="about-content">
           <div className="about-box">
             <p>

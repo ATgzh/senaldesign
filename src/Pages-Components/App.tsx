@@ -5,6 +5,7 @@ import '../Styles/App.css';
 import NavScrollExample from './Navbar'; 
 import Navbar from './Navbar';
 import About from './About';
+import AnalysisModules from './AnalysisModules';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavScrollExample />
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/analysis" element={<AnalysisModules />} />
         {/* Add other routes as needed */}
       </Routes>
     </div>
