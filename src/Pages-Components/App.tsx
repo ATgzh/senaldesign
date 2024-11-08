@@ -1,22 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-router-dom';
 import '../Styles/App.css';
-import NavScrollExample from './Navbar'; 
 import Navbar from './Navbar';
-import About from './About';
-import AnalysisModules from './AnalysisModules';
+import Sidebar from './Sidebar';
+import Home from './Home';
+import Footer from './Footer';
+import { isLoggedIn } from './Globals';
 
 function App() {
   return (
-    <div>
-      <NavScrollExample />
+    <main>
+      <Router>
+        {isLoggedIn && <Sidebar />}
+        {!isLoggedIn && <Navbar />}
       <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/analysis" element={<AnalysisModules />} />
-        {/* Add other routes as needed */}
+      <Route path="/" element={<Home/>}/>
       </Routes>
-    </div>
+      <Footer/>
+    </Router>
+    </main>
   );
 }
 

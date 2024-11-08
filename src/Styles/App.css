@@ -1,38 +1,115 @@
-.App {
-  font-family: Arial, sans-serif;
+/* Main container when not logged in*/
+.main-container-loggedin {
+  display: flex; /* Use flexbox to align the sections side by side */
+  flex-direction: row;
+  height: 600px; /* Full height of the screen */
+  margin-left: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container-notlogged {
+  display: flex; /* Use flexbox to align the sections side by side */
+  height: 300px; /* Full height of the screen */
+  margin-top: 107px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Left blue section */
+.left-section {
+  background: linear-gradient(to right, #426BBC, #74A9F5);  /* Blue background */
+  width: 50%; /* Take up half of the screen width */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-items: center;  /* Centers the header text vertically */
+  padding: 50px;
+  padding-top: 100px;
+}
+
+/* Right white section */
+.right-section {
+  background-color: white;  /* White background */
+  width: 50%; /* Take up half of the screen width */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;  /* Centers the header-right text vertically */
+  padding: 50px;
+  padding-top: 100px;
+  margin-top: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header text inside blue section */
+.header {
+  color: white;  /* Make the text white to contrast with blue */
+  text-align: center; /* Center align the text inside */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Right section text (header-right) */
+.header-right {
+  text-align: center; /* Center align the right section's text */
+}
+
+.header-right a {
+  margin-top: 10px; /* Space for the link */
+}
+
+/* Explore Models Section */
+.explore-section {
+  width: 100%; /* Ensure it spans the full width of the screen */
+  padding: 50px 20px; /* Add padding on top and sides */
+  background-color: #ffffff; /* Light background color */
+  text-align: center; /* Center text in this section */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-top: 20px; /* Optional: Adjust the space between this section and previous sections */
+}
+
+/* Grid for the model cards */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+  gap: 20px;
+  justify-content: center; /* Center the grid within the section */
+  max-width: 1200px; 
+  margin: 0 auto; /* Center the grid horizontally */
+  padding-top: 40px;
+}
+
+/* Styling for each model card */
+.model-card {
+  background-color: #ffffff; /* Background color for each card */
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(43, 120, 183);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+  max-height: 150px;
+  width: 100%;
+  height: 100%; /* Make cards responsive in height */
+}
+
+/* Model title */
+.model-card h5 {
+  color: #426BBC;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Model description text */
+.model-card p {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .model-grid {
+    grid-template-columns: 1fr 1fr; /* 2 cards per row on medium screens */
   }
 }
+
+@media (max-width: 480px) {
+  .model-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}
+
