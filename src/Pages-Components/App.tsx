@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation} from 'react-router-dom';
 import '../Styles/App.css';
 import Navbar from './Navbar';
+import Sidebar from './Sidebar';
 import Home from './Home';
 import Footer from './Footer';
 import { isLoggedIn } from './Globals';
@@ -12,6 +13,7 @@ function App() {
   return (
     <main>
       <Router>
+        {isLoggedIn && <Sidebar />}
         {!isLoggedIn && <Navbar />}
       <Routes>
       <Route path="/" element={<Home/>}/>

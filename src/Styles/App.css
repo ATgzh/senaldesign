@@ -1,7 +1,14 @@
-/* Main container for both left and right sections */
-.main-container {
+/* Main container when not logged in*/
+.main-container-loggedin {
   display: flex; /* Use flexbox to align the sections side by side */
-  height: 300px; /* Full height of the screen */
+  flex-direction: row;
+  height: 400px; /* Full height of the screen */
+  margin-left: 200px;
+}
+
+.main-container-notlogged {
+  display: flex; /* Use flexbox to align the sections side by side */
+  height: 400px; /* Full height of the screen */
 }
 
 /* Left blue section */
@@ -103,3 +110,4 @@
     grid-template-columns: 1fr; /* 1 card per row on small screens */
   }
 }
+

@@ -30,13 +30,15 @@
 }
 
 .borderline{
+    position: fixed;
     width: 100%; /* Ensure it spans the full width of the screen */
-    height: 1%;
+    height: 0.1%;
   padding: 0.5px 1px; /* Add padding on top and sides */
   background-color: #000000; /* Light background color */
   text-align: center; /* Center text in this section */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
-  margin-top: 107px;
+  margin-top: -295px;
+  z-index: 1000;
 }
 
 .borderline-2{
@@ -47,6 +49,18 @@
   text-align: center; /* Center text in this section */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
   margin-top: 30px;
+}
+
+.borderline-vertical{
+    position: fixed;
+    width: 0.5px; 
+    height: 100%;
+  padding: 0.5px 1px; /* Add padding on top and sides */
+  background-color: #000000; /* Light background color */
+  text-align: center; /* Center text in this section */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  margin-left: 150px;
+  z-index: 2000;
 }
 
 .explore-text{
@@ -66,4 +80,38 @@
   .btn-primary:hover {
     background-color: #0056b3; /* Darker blue on hover */
     border-color: #000000;
+  }
+
+  
+  .Upload{
+
+    min-width: 550px;
+    width: 60%;
+    height: auto;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+
+  .module-small{
+    max-width: 2100px;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+
+  .right-section {
+    display: flex;              /* Flex container for the small boxes on the right */
+    flex-direction: column;     /* Stack the small boxes vertically */
+    margin: 20px;                  /* Space between the small boxes */
   }
