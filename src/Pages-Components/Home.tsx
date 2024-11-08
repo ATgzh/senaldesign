@@ -47,6 +47,8 @@ const App: React.FC = () => {
                                 <p>Credits</p>
                             </div>
                         </div>
+
+                        
                     </div>
                 </>
             
@@ -66,7 +68,7 @@ const App: React.FC = () => {
                         {/* Header Right Section inside the white rectangle */}
                         <div>
                             <p className="right-header">
-                            Log in or Sign up Today<br />to Start Analyzing
+                                Log in or Sign up Today<br />to Start Analyzing
                             </p>
                             <a
                             href="#"
@@ -82,44 +84,63 @@ const App: React.FC = () => {
                 )}
             </div>
 
-      {/* Only render this section if the user is not logged in */}
-      {!isLoggedIn && (
-        <>
-          <div className='borderline'></div>
-          <div className='borderline-2'></div>
-          {/* Explore Models Section */}
-          <section className="explore-section text-center">
-            <div className='explore-text'>Explore Models</div>
-            <div className="model-grid">
-              <div className="model-card">
-                <h5>CAPTURA</h5>
-                <p>Check if an English L1 learner’s Spanish text was copied from Google Translate.</p>
-              </div>
-              <div className="model-card">
-                <h5>MLL2</h5>
-                <p>Classify L2 writing proficiency into six levels using a machine learning model.</p>
-              </div>
-              <div className="model-card">
-                <h5>SENTIMENT</h5>
-                <p>Analyze sentiment in Spanish L2 compositions.</p>
-              </div>
-              <div className="model-card">
-                <h5>LEX</h5>
-                <p>Assess advanced vocabulary and growth in Spanish over a semester.</p>
-              </div>
-              <div className="model-card">
-                <h5>SYNT</h5>
-                <p>Measure production of verbs, sentence length, and sentence complexity.</p>
-              </div>
-              <div className="model-card">
-                <h5>GRAMMAR</h5>
-                <p>Analyze grammatical elements, tenses, and check gender/number agreement.</p>
-              </div>
+        {/* Only render this section if the user is not logged in */}
+        {!isLoggedIn && (
+            <>
+                <div className='borderline'></div>
+                <div className='borderline-2'></div>
+                {/* Explore Models Section */}
+                <section className="explore-section text-center">
+                    <div className='explore-text'>Explore Models</div>
+                    <div className="model-grid">
+                    <div className="model-card">
+                        <h5>CAPTURA</h5>
+                        <p>Check if an English L1 learner’s Spanish text was copied from Google Translate.</p>
+                    </div>
+                    <div className="model-card">
+                        <h5>MLL2</h5>
+                        <p>Classify L2 writing proficiency into six levels using a machine learning model.</p>
+                    </div>
+                    <div className="model-card">
+                        <h5>SENTIMENT</h5>
+                        <p>Analyze sentiment in Spanish L2 compositions.</p>
+                    </div>
+                    <div className="model-card">
+                        <h5>LEX</h5>
+                        <p>Assess advanced vocabulary and growth in Spanish over a semester.</p>
+                    </div>
+                    <div className="model-card">
+                        <h5>SYNT</h5>
+                        <p>Measure production of verbs, sentence length, and sentence complexity.</p>
+                    </div>
+                    <div className="model-card">
+                        <h5>GRAMMAR</h5>
+                        <p>Analyze grammatical elements, tenses, and check gender/number agreement.</p>
+                    </div>
+                    </div>
+                </section>
+            </>
+            
+        )}
+        {/* section for bottom three modules*/}
+        {isLoggedIn && (
+            <>
+            <div className='bottom-section'>
+                <div className='module-small-long'>
+                    <p>Recent Analyses</p>
+                </div>
+                <div className='module-small-long'>
+                    <p>Recent Documents</p>
+                </div>
+                <div className='module-small-tall'>
+                    <p></p>
+                </div>
             </div>
-          </section>
-        </>
-      )}
+            </>
+        )}
+    
     </div>
+    
   );
 };
 

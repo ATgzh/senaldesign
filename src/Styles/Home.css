@@ -37,7 +37,7 @@
   background-color: #000000; /* Light background color */
   text-align: center; /* Center text in this section */
   box-sizing: border-box; /* Ensures padding doesn't affect width */
-  margin-top: -295px;
+  margin-top: -300px;
   z-index: 1000;
 }
 
@@ -84,17 +84,17 @@
 
   
   .Upload{
-
-    min-width: 550px;
-    width: 60%;
-    height: auto;
+    
+    width: 1500px;
+    height: 520px;
     border-radius: 30px;
     margin: 15px;
     background-color: #ffffff;
-    padding: 10px;
+    padding-top: 10px;
     justify-items: center;
     border-radius: 20px;
     border: 1px solid black;
+    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.3);
   }
 
   .module-small{
@@ -103,15 +103,58 @@
     height: 400px;
     border-radius: 30px;
     margin: 15px;
+    margin-top: 0px;
     background-color: #ffffff;
     padding: 10px;
     justify-items: center;
     border-radius: 20px;
     border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .module-small-long{
+    max-width: 2100px;
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    margin: 15px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .module-small-tall{
+    max-width: 2100px;
+    width: 380px;
+    height: 300px;
+    border-radius: 30px;
+    margin: 15px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .right-section {
     display: flex;              /* Flex container for the small boxes on the right */
     flex-direction: column;     /* Stack the small boxes vertically */
-    margin: 20px;                  /* Space between the small boxes */
+    justify-content: flex-start;
+    margin: 0px;                  /* Space between the small boxes */
+    padding-top: 15px;
+  }
+
+  .bottom-section {
+    display: flex;              /* Flex container for the small boxes on the right */
+    flex-direction: row;     /* Stack the small boxes vertically */
+    margin-left: 200px; 
+    margin-top: 0px;
   }

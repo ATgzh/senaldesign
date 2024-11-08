@@ -2,13 +2,14 @@
 .main-container-loggedin {
   display: flex; /* Use flexbox to align the sections side by side */
   flex-direction: row;
-  height: 400px; /* Full height of the screen */
+  height: 600px; /* Full height of the screen */
   margin-left: 200px;
 }
 
 .main-container-notlogged {
   display: flex; /* Use flexbox to align the sections side by side */
-  height: 400px; /* Full height of the screen */
+  height: 300px; /* Full height of the screen */
+  margin-top: 107px;
 }
 
 /* Left blue section */
@@ -32,6 +33,7 @@
   align-items: center;  /* Centers the header-right text vertically */
   padding: 50px;
   padding-top: 100px;
+  margin-top: 200px;
 }
 
 /* Header text inside blue section */
