@@ -31,7 +31,7 @@
 
 .borderline{
     position: fixed;
-    width: 100%; /* Ensure it spans the full width of the screen */
+    width: 100%; 
     height: 0.1%;
   padding: 0.5px 1px; /* Add padding on top and sides */
   background-color: #000000; /* Light background color */
@@ -42,7 +42,7 @@
 }
 
 .borderline-2{
-    width: 100%; /* Ensure it spans the full width of the screen */
+    width: 100%; 
     height: 1%;
   padding: 0.5px 1px; /* Add padding on top and sides */
   background-color: #000000; /* Light background color */
@@ -73,7 +73,7 @@
 
 /* Custom blue button */
 .btn-primary {
-    background-color: #6698de; /* Custom shade of blue */
+    background-color: #6698de; 
     border-color: #000000;
   }
   
