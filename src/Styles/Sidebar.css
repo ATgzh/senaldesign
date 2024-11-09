@@ -20,24 +20,33 @@
   
   .sidebar-menu {
     list-style-type: none;
+    padding-left: 0px;  /* Remove default padding */
+    margin: 0;   /* Remove default margin */
+    text-align: center; /* Center the content */
   }
   
   .sidebar-menu li {
-    padding: 15px;
-    text-align: center;
+    padding: 0px;
+    text-align: left;
   }
   
   .sidebar-menu li a {
-    margin-right: 25px;
+    display: block; /* Make the link a block element */
+    width: 100%; /* Ensure it spans the full width of the li */
+    height: 50px; /* Set a specific height to make the clickable area bigger */
     color: rgb(34, 33, 33);
     text-decoration: none;
     font-size: 18px;
-    display: block;
-    margin-top: 20px
+    padding-top: 14px; /* Center text vertically */
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /* Transition for fade and rounded corners */
+    border-radius: 20px; /* round edges */
   }
   
   .sidebar-menu li a:hover {
-    background-color: #575757;
+    background-color: #4a68bc;
+    border-radius: 20px; /* round edges */
   }
 
   .sidebar-logo img {
@@ -46,4 +55,4 @@
     object-fit: cover; /* Ensures the image maintains its aspect ratio */
     margin-left: 25px; /* Optional: add a margin to the left if needed */
     margin-top: -30px;
-  }
+  } 
