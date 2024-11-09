@@ -1,9 +1,12 @@
 /* Main container when not logged in*/
 .main-container-loggedin {
   display: flex; /* Use flexbox to align the sections side by side */
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  height: 600px; /* Full height of the screen */
+  height: 550px; /* Full height of the screen */
   margin-left: 200px;
+  margin-top: 100px;
 }
 
 .main-container-loggedin-library {

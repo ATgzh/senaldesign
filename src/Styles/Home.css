@@ -84,8 +84,9 @@
 
   
   .Upload{
-    
-    width: 1500px;
+    flex-grow: 1;
+    width: 70%;
+    min-width: 200px;
     height: 520px;
     border-radius: 30px;
     margin: 15px;
@@ -98,9 +99,9 @@
   }
 
   .module-small{
-    max-width: 2100px;
-    width: 300px;
-    height: 400px;
+    
+    width: 250px;
+    height: 250px;
     border-radius: 30px;
     margin: 15px;
     margin-top: 0px;
@@ -113,8 +114,8 @@
   }
 
   .module-small-long{
-    max-width: 2100px;
-    width: 450px;
+    flex: 3;
+    width: 40%;
     height: 300px;
     border-radius: 30px;
     margin: 15px;
@@ -128,13 +129,13 @@
   }
 
   .module-small-tall{
-    max-width: 2100px;
-    width: 380px;
+    flex: 1.25;
+    width: 40%;
     height: 300px;
     border-radius: 30px;
-    margin: 15px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 18px;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-top: 0px;
     background-color: #ffffff;
     padding: 10px;
@@ -144,7 +145,7 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
-  .right-section {
+  .small-boxes {
     display: flex;              /* Flex container for the small boxes on the right */
     flex-direction: column;     /* Stack the small boxes vertically */
     justify-content: flex-start;
@@ -154,7 +155,10 @@
 
   .bottom-section {
     display: flex;              /* Flex container for the small boxes on the right */
+    height: 350px;
     flex-direction: row;     /* Stack the small boxes vertically */
-    margin-left: 200px; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
     margin-top: 0px;
   }

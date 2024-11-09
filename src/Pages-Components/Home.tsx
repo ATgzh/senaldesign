@@ -39,7 +39,7 @@ const App: React.FC = () => {
                         
                         </div>
 
-                        <div className='right-section'>
+                        <div className='small-boxes'>
                             <div className='module-small'>
                                 <p>My Proficiency Level</p>
                             </div>
