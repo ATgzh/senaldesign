@@ -10,12 +10,12 @@
 
 .header-text-h2 {
     font-size: 22pt;
+    margin-top: 25px;
     color: #000000;
     font-weight: bold;
     display: flex;
     justify-content: start;
-    margin-left: 150px;
-    align-items: center;
+    text-align: center;
 }
 
 .footer-text {

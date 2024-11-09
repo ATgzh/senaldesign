@@ -21,28 +21,28 @@ function Library() {
   return (
     <div className="main-container-loggedin-library">
       <div className='all-tables'>
-      <h1 className='header-text'>
-        Library
-      </h1>
+        <h1 className='header-text'>
+            Library
+        </h1>
 
-      <h2 className='header-text-h2'>
-        Analysis Results
-      </h2>
+        <h2 className='header-text-h2'>
+            Analysis Results
+        </h2>
 
-      <div className='each-table'>
-        <div>
-          <TableAnalyses data={analyses} />
+        <div className='each-table'>
+            
+            <TableAnalyses data={analyses} />
+            
         </div>
-      </div>
 
-      <h2 className='header-text-h2'>
-        Uploaded Files
-      </h2>
+        <h2 className='header-text-h2'>
+            Uploaded Files
+        </h2>
 
-      <div className='each-table'>
-        <div>
-          <TableUploads data={uploads} />
-        </div>
+        <div className='each-table'>
+            
+            <TableUploads data={uploads} />
+        
       </div>
 
       </div>

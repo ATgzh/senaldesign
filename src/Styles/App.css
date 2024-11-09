@@ -12,7 +12,7 @@
   flex-direction: column;
   height: 1000px; /* Full height of the screen */
   margin-left: 150px;
-  margin-right: 0px;
+  margin-top: 40px;
   justify-content: flex-start;
 }
 
@@ -31,7 +31,7 @@
   align-items: flex-start;
   align-items: center;  /* Centers the header text vertically */
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 /* Right white section */
@@ -41,8 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;  /* Centers the header-right text vertically */
-  padding: 50px;
-  padding-top: 100px;
+  
+  padding-top: 150px;
   margin-top: 200px;
 }
 
