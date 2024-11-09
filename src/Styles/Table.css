@@ -1,0 +1,94 @@
+.outer-container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: #e3e3e3;
+    
+    padding-right: 0px;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+/*this is a flex box for the analysis and upload tables*/
+.all-tables{
+    display: flex-start;
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 0%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.each-table{
+    display: flex;
+    justify-content: center;
+}
+
+.table-container {
+    width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #fff;
+    
+  }
+
+  .custom-table thead{
+    font-size: 15pt;
+    color: #426BBC;
+    text-align: center;
+  }
+
+  .custom-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: wrap;
+    font-weight: bold;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    font-size: 12pt;
+    padding: 8px;
+    border: 1px solid #000;
+    text-align: center;
+    align-items: center;
+  }
+
+  .custom-table th{
+    font-size: 15pt;
+  }
+
+  .custom-table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+  }
+
+  .custom-table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+  }
+
+  .rounded-cell-left{
+    border-top-left-radius: 8px;
+  }
+
+  .rounded-cell-right{
+    border-top-right-radius: 8px;
+  }
+
+  .custom-table button{
+    background: linear-gradient(to right, #426BBC, #74A9F5);
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+    justify-self: center;
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  .custom-table a{
+
+    color: #426BBC;
+    text-decoration: underline;
+  }

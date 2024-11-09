@@ -1,0 +1,129 @@
+.description-text-plans a {
+    color:#426BBC !important;
+  }
+  .main-page-containers {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      display: flex;
+      padding-right: 3%;
+      padding-left: 3%;
+      padding-top: 5%;
+      padding-bottom: 10%;
+      gap: 8px;
+  }
+  
+  .header-text-plans{
+    font-size: 30pt;
+    color: #426BBC;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  .box-and-text{
+    margin: auto;
+    width: 600px;
+  }
+  
+  .main-text{
+    text-decoration: none;
+    font-size: 21pt;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+  }
+  
+  .plan-container-free{
+    width: 285px;
+    height: auto;
+    min-height: 225px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.5);
+    padding: 10px;
+  }
+  
+  .description-text-plans {
+    width: 65%;
+    height: auto;
+    min-height: 175px;
+    border-radius: 15px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.5);
+    padding: 40px;
+  }
+  
+  .plan-container {
+    width: 285px;
+    height: auto;
+    min-height: 225px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #dde8ff;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.5);
+    padding: 10px;
+  }
+  
+  .plan-container-basic{
+    width: 285px;
+    height: auto;
+    min-height: 225px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #dde8ff;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.5);
+    padding: 10px;
+  }
+  
+  .plan-container-advanced{
+    width: 285px;
+    height: auto;
+    min-height: 225px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background: #a2c1ff;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.5);
+    padding: 10px;
+  }
+  
+  .plan-container-professional{
+    width: 285px;
+    height: auto;
+    min-height: 225px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    background:  #5e86d8;
+    box-shadow: 0 2px 7px rgba(0,0,0, 0.5);
+    padding: 10px;
+  }
+  
+  .plan-title {
+    font-size: 25pt;
+    font-weight: bold;
+  }
+  
+  .plan-list > ul {
+    font-size: 13pt;
+    display: block;
+    list-style: disc;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .price {
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  .price-interval {
+    font-size: 0.8em;
+  }
+  hr {
+    border: 1.5px solid black;
+  }

@@ -6,6 +6,16 @@
   margin-left: 200px;
 }
 
+.main-container-loggedin-library {
+  display: flex; /* Use flexbox to align the sections side by side */
+  text-align: center ;
+  flex-direction: column;
+  height: 1000px; /* Full height of the screen */
+  margin-left: 150px;
+  margin-right: 0px;
+  justify-content: flex-start;
+}
+
 .main-container-notlogged {
   display: flex; /* Use flexbox to align the sections side by side */
   height: 300px; /* Full height of the screen */

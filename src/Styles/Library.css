@@ -1,0 +1,29 @@
+.header-text {
+    font-size: 30pt;
+    color: #000000;
+    font-weight: bold;
+    
+    
+    
+    text-align: center; /* For vertical centering */
+}
+
+.header-text-h2 {
+    font-size: 22pt;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    margin-left: 150px;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 12pt;
+    color: #000000;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}

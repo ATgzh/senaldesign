@@ -6,6 +6,7 @@ import '../Styles/App.css';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Home from './Home';
+import Library from './Library';
 import Footer from './Footer';
 import { isLoggedIn } from './Globals';
 
@@ -17,6 +18,7 @@ function App() {
         {!isLoggedIn && <Navbar />}
       <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/Library" element={<Library />} />
       </Routes>
       <Footer/>
     </Router>
