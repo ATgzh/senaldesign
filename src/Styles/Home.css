@@ -145,6 +145,20 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
+  .module-plans-big{
+    width: 1000px;
+    height: 250px;
+    border-radius: 30px;
+    margin: 15px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
   .small-boxes {
     display: flex;              /* Flex container for the small boxes on the right */
     flex-direction: column;     /* Stack the small boxes vertically */

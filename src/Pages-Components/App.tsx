@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Home from './Home';
 import Library from './Library';
+import Plans from './Plans';
 import Footer from './Footer';
 import { isLoggedIn } from './Globals';
 
@@ -19,6 +20,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/Library" element={<Library />} />
+      <Route path="/Plans" element={<Plans />} />
       </Routes>
       <Footer/>
     </Router>

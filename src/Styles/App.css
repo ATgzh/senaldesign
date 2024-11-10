@@ -19,6 +19,16 @@
   justify-content: flex-start;
 }
 
+.main-container-loggedin-Plans {
+  display: flex; /* Use flexbox to align the sections side by side */
+  text-align: center ;
+  flex-direction: row;
+  height: 1000px; /* Full height of the screen */
+  margin-left: 150px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
 .main-container-notlogged {
   display: flex; /* Use flexbox to align the sections side by side */
   height: 300px; /* Full height of the screen */
@@ -45,8 +55,8 @@
   justify-content: center;
   align-items: center;  /* Centers the header-right text vertically */
   
-  padding-top: 150px;
-  margin-top: 200px;
+  padding-top: 0px;
+  margin-top: 50px;
 }
 
 /* Header text inside blue section */
