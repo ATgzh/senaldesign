@@ -15,11 +15,7 @@ const App: React.FC = () => {
                     <div className="main-container-loggedin">
                         <div className="Upload">
                         <p className="main-text">Start Analyzing!</p>
-                        {true && (
-                            <p>
-                            Please <a href="/login">log in</a> or <a href="/signup">sign up</a> to use the analyzer.
-                            </p>
-                        )}
+                        
                         <textarea
                             placeholder="Enter Student Text"
                             className="input-upload"

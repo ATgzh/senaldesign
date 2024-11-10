@@ -1,0 +1,83 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background-color: #ffffff;
+    color: white;
+    padding-top: 50px; /* Push the menu down a bit */
+    border-radius: 0px;
+    border-right: 1px solid black;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Sidebar menu */
+  .sidebar-menu {
+    list-style-type: none;
+    padding-left: 0px; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the list items */
+  }
+  
+  /* Styling for each list item */
+  .sidebar-menu li {
+    width: 100%; /* Ensure each item spans full width of the sidebar */
+    display: flex;
+    justify-content: center; /* Center the link horizontally */
+    align-items: center; /* Center the link vertically */
+    padding: 10px 0; /* Adjust padding to add space between items */
+  }
+  
+  /* Styling for the anchor (link) element */
+  .sidebar-menu li a {
+    display: inline-flex;  /* Ensures the link is flexible and can grow with content */
+    flex-direction: column; /* Allow wrapping text to take up more space vertically */
+    justify-content: center; /* Ensure text is vertically centered */
+    color: rgb(34, 33, 33);
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 0; /* Vertical padding for better clickable area */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    border-radius: 20px; /* Rounded edges */
+    width: 100%;  /* Set width to 100% to ensure they span the full container width */
+    max-width: 150px; /* Set a maximum width (sidebar width) for the links */
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.5; /* Set line-height to ensure enough space for wrapped text */
+    min-height: 50px; /* Optional: Set a minimum height for each item */
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /* Hover effect for the links */
+  .sidebar-menu li a:hover {
+    background-color: #4a68bc;
+    border-radius: 20px;
+  }
+  
+  /* Styling for the sidebar logo */
+  .sidebar-logo img {
+    width: 100px; /* Set the width to match the navbar logo size */
+    height: 80px; /* Set the height to match the navbar logo size */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    margin-left: 0px; /* Optional: add a margin to the left if needed */
+    margin-top: -30px;
+  }

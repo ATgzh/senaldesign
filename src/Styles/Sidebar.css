@@ -16,6 +16,7 @@
     padding-top: 50px; /* Push the menu down a bit */
     border-radius: 0px;
     border-right: 1px solid black;
+    z-index: 1;
   }
   
   .sidebar-menu {

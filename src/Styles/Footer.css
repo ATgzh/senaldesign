@@ -3,11 +3,12 @@ footer{
     flex-direction: row;
     position: relative;
     width: 100%;
-    
+    position: relative; /* You can keep this */
     height: 7vh;
     background-color: #426BBC;
     justify-content: space-between;
     margin-top: auto;
+    z-index: 500;
   }
 
 footer nav{
