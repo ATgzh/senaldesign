@@ -3,7 +3,7 @@ footer{
     flex-direction: row;
     position: relative;
     width: 100%;
-    position: relative; /* You can keep this */
+    position: relative;
     height: 7vh;
     background-color: #426BBC;
     justify-content: space-between;

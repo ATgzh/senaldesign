@@ -1,0 +1,63 @@
+.proficiency-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .proficiency-list li {
+    width: 50%; /* Each item takes up 50% of the container width */
+    margin-bottom: 10px; /* Space between items */
+    font-size: 20px;  /* Adjust the size as needed */
+    font-weight: bold;  /* Makes the text bold */
+  }
+
+  .module-scoring-big {
+    width: 70%;
+    border-radius: 20px; 
+    margin: 15px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    height: auto; /*height adjusts based on content */
+    max-height: none; 
+  }
+
+  .module-scoring-text {
+    font-size: 20px;  
+    font-weight: bold;
+  }
+
+  .sample-text-container {
+    margin-top: 20px;
+    margin-left: 225px;
+    margin-right: 225px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .sample-text-container h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6698de;
+    font-weight: bold;
+  }
+  
+  .sample-text-container ol {
+    padding-left: 20px; 
+  }
+  
+  .sample-text-container li {
+    margin-bottom: 20px; /* Space between list items */
+    font-size: 20px;
+  }

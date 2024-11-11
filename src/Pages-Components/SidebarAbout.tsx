@@ -16,9 +16,9 @@ const Sidebar = () => {
 
         {/* Sidebar menu */}
         <ul className="sidebar-menu">
-        <li><Link to="/AboutUs">About Us</Link></li>  {/* Use Link to="/" for Home */}
-          <li><Link to="/AnalysisModules">Analysis Modules</Link></li>  {/* Link to Library component */}
-          <li><Link to="/Plans">Scoring</Link></li> {/* Link to other pages */}
+        <li><Link to="/AboutUs">About Us</Link></li>
+          <li><Link to="/AnalysisModules">Analysis Modules</Link></li>
+          <li><Link to="/Scoring">Scoring</Link></li>
         </ul>
       </div>
     );

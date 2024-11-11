@@ -1,0 +1,21 @@
+.module-AboutUs-big {
+    width: 70%;
+    border-radius: 20px; /* Single border radius for consistency */
+    margin: 15px;
+    margin-top: 0px;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    height: auto; /* Allow height to adjust based on content */
+    max-height: none; /* Prevent max-height from limiting the expansion */
+    font-size: 20px;
+}
+
+  .module-AboutUs-text {
+    font-size: 20px;  /* Adjust the size as needed */
+    font-weight: bold;  /* Makes the text bold */
+  }

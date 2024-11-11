@@ -13,7 +13,7 @@ function Plans() {
 
   return (
     <div className="main-container-loggedin-Plans">
-      <main className='main'>
+      
       <p className='header-text-plans'>
         Plans
       </p>
@@ -44,7 +44,7 @@ function Plans() {
 
         </div>
       </div>
-      </main>
+      
     </div>
   );
 }

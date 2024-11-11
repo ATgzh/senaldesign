@@ -13,17 +13,17 @@
     width: 150px;
     background-color: #ffffff;
     color: white;
-    padding-top: 50px; /* Push the menu down a bit */
+    padding-top: 50px;
     border-radius: 0px;
     border-right: 1px solid black;
-    z-index: 1;
+    z-index: 500;
   }
   
   .sidebar-menu {
     list-style-type: none;
     padding-left: 0px;  /* Remove default padding */
     margin: 0;   /* Remove default margin */
-    text-align: center; /* Center the content */
+    text-align: center;
   }
   
   .sidebar-menu li {

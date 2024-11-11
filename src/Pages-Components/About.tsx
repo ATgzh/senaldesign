@@ -1,4 +1,3 @@
-// About.js (or About.tsx, depending on your file extension)
 import React from 'react';
 
 const About = () => {
@@ -10,5 +9,5 @@ const About = () => {
   );
 };
 
-export default About;  // Ensure it has a default export
+export default About; // not used currently
 export {}

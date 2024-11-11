@@ -15,18 +15,19 @@
   flex-direction: column;
   height: 1000px; /* Full height of the screen */
   margin-left: 150px;
-  margin-top: 40px;
+  margin-top: 100px;
   justify-content: flex-start;
+  min-height: 100vh; /* Ensures the container takes at least the full viewport height */
 }
 
 .main-container-loggedin-Plans {
-  display: flex; /* Use flexbox to align the sections side by side */
-  text-align: center ;
-  flex-direction: row;
-  height: 1000px; /* Full height of the screen */
+  display: flex;
+  text-align: center;
+  flex-direction: column;
   margin-left: 150px;
-  margin-top: 40px;
-  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+  min-height: 100vh; /*container takes at least the full viewport height */
 }
 
 .main-container-notlogged {
@@ -97,7 +98,7 @@
 
 /* Styling for each model card */
 .model-card {
-  background-color: #ffffff; /* Background color for each card */
+  background-color: #ffffff; 
   border-radius: 50px;
   border: 1px solid black;
   padding: 20px;

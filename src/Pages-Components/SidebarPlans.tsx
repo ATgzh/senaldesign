@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import '../Styles/Sidebar.css';
+import '../Styles/SidebarAbout.css';
 
 const Sidebar = () => {
     return (
@@ -13,13 +13,6 @@ const Sidebar = () => {
         <div className="sidebar-logo">
           <img src={logo} alt="Logo" />
         </div>
-
-        {/* Sidebar menu */}
-        <ul className="sidebar-menu">
-        <li><Link to="/">Home</Link></li>
-          <li><Link to="/Library">Library</Link></li>  
-          <li><Link to="/Plans">Upgrade Plan</Link></li> 
-        </ul>
       </div>
     );
 };

@@ -11,7 +11,7 @@ const App: React.FC = () => {
                 {/* Render different content based on the isLoggedIn status */}
                 {isLoggedIn ? (
                 // Logged-in View
-                <>  
+                <> 
                     <div className="main-container-loggedin">
                         <div className="Upload">
                         <p className="main-text">Start Analyzing!</p>
